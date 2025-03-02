@@ -1,0 +1,18 @@
+[project]
+name = "email-verification"
+authors = ["Your Name"]
+description = "Decentralized Email Verification System on Stacks"
+telemetry = false
+requirements = []
+
+[contracts.email-verification]
+path = "contracts/email-verification.clar"
+depends_on = ["email-registry", "utils"]
+
+[contracts.email-registry]
+path = "contracts/email-registry.clar"
+depends_on = ["utils"]
+
+[contracts.utils]
+path = "contracts/utils.clar"
+depends_on = []
